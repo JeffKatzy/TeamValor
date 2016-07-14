@@ -36,6 +36,8 @@ class Element < ApplicationRecord
   normal_strength = []
 
   ] 
+  
+  # It seems like this is used to seed the database - so I would move this into a seed file.  Could be that I am misunderstanding.
   def self.element_strengths
     ELEMENT_STRENGTHS.each_with_index do |ele, index|
         ele.each do |e|
